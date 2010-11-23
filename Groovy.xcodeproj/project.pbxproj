@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		875A8234126FFBA400ECADC2 /* thePlugin */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 875A823D126FFBC200ECADC2 /* Build configuration list for PBXAggregateTarget "thePlugin" */;
+			buildPhases = (
+				875A8233126FFBA400ECADC2 /* ShellScript */,
+				484381951281E91000D8F242 /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = thePlugin;
+			productName = thePlugin;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		484381731281E6F200D8F242 /* groovy.png in Resources */ = {isa = PBXBuildFile; fileRef = 484381721281E6F200D8F242 /* groovy.png */; };
+		484381861281E90B00D8F242 /* groovy.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 484381721281E6F200D8F242 /* groovy.png */; };
+		4843819F1281EA5B00D8F242 /* PlayerMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4843819E1281EA5B00D8F242 /* PlayerMenuController.m */; };
+		484381ED1282028A00D8F242 /* SongListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484381EC1282028A00D8F242 /* SongListController.m */; };
+		48441976129A65C80090B358 /* PlaylistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48441975129A65C80090B358 /* PlaylistController.m */; };
+		48441978129A66710090B358 /* Account.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48441977129A66710090B358 /* Account.plist */; };
+		484419E4129A756A0090B358 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 484419E3129A756A0090B358 /* Playlist.m */; };
+		48441AAA129A85C30090B358 /* NSArray-Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 48441AA9129A85C30090B358 /* NSArray-Shuffle.m */; };
+		48441ADC129A8BB00090B358 /* AccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48441ADB129A8BB00090B358 /* AccountController.m */; };
+		48441B19129A927F0090B358 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 48441B18129A927F0090B358 /* login.png */; };
+		486792011284AFAF00C73DA0 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486792001284AFAF00C73DA0 /* AboutController.m */; };
+		486793F01284B20D00C73DA0 /* ABOUT.txt in Resources */ = {isa = PBXBuildFile; fileRef = 486793EF1284B20D00C73DA0 /* ABOUT.txt */; };
+		4867965312887E4500C73DA0 /* GroovyAppliance.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4867965212887E4500C73DA0 /* GroovyAppliance.mm */; };
+		48D8207B128F1A1200D43D7E /* control in Resources */ = {isa = PBXBuildFile; fileRef = 48D8207A128F1A1200D43D7E /* control */; };
+		48D8223C128F5AAE00D43D7E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 48D8223B128F5AAE00D43D7E /* LICENSE */; };
+		48D825C312900A9000D43D7E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D825C212900A9000D43D7E /* User.m */; };
+		48E6CDE112820A1B009AA34D /* SongAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E6CDDC12820A1B009AA34D /* SongAsset.m */; };
+		48E6CDE212820A1B009AA34D /* Groovy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E6CDDE12820A1B009AA34D /* Groovy.m */; };
+		48E6CDF912820B5D009AA34D /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E6CDF012820B5D009AA34D /* NSObject+SBJSON.m */; };
+		48E6CDFA12820B5D009AA34D /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E6CDF212820B5D009AA34D /* NSString+SBJSON.m */; };
+		48E6CDFB12820B5D009AA34D /* SBJsonBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48E6CDF412820B5D009AA34D /* SBJsonBase.mm */; };
+		48E6CDFC12820B5D009AA34D /* SBJsonParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48E6CDF612820B5D009AA34D /* SBJsonParser.mm */; };
+		48E6CDFD12820B5D009AA34D /* SBJsonWriter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48E6CDF812820B5D009AA34D /* SBJsonWriter.mm */; };
+		875A8424126FFF5300ECADC2 /* BackRow in Resources */ = {isa = PBXBuildFile; fileRef = 875A8253126FFF5300ECADC2 /* BackRow */; };
+		875A8426126FFF6500ECADC2 /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 875A8425126FFF6500ECADC2 /* build.sh */; };
+		875A8428126FFF6D00ECADC2 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 875A8427126FFF6D00ECADC2 /* Makefile */; };
+		875A873412704ACC00ECADC2 /* theos in Resources */ = {isa = PBXBuildFile; fileRef = 875A86EB12704ACC00ECADC2 /* theos */; };
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		484381951281E91000D8F242 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				484381861281E90B00D8F242 /* groovy.png in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF630370AF2F00C91783 /* Groovy_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Groovy_Prefix.pch; sourceTree = "<group>"; };
+		48437FB3127C449D00D8F242 /* BackRowExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackRowExtras.h; sourceTree = "<group>"; };
+		484381721281E6F200D8F242 /* groovy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = groovy.png; path = Resources/groovy.png; sourceTree = "<group>"; };
+		4843819D1281EA5B00D8F242 /* PlayerMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerMenuController.h; sourceTree = "<group>"; };
+		4843819E1281EA5B00D8F242 /* PlayerMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerMenuController.m; sourceTree = "<group>"; };
+		484381EB1282028A00D8F242 /* SongListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongListController.h; sourceTree = "<group>"; };
+		484381EC1282028A00D8F242 /* SongListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListController.m; sourceTree = "<group>"; };
+		48441974129A65C80090B358 /* PlaylistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistController.h; sourceTree = "<group>"; };
+		48441975129A65C80090B358 /* PlaylistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistController.m; sourceTree = "<group>"; };
+		48441977129A66710090B358 /* Account.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Account.plist; path = Resources/Account.plist; sourceTree = "<group>"; };
+		484419E2129A756A0090B358 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
+		484419E3129A756A0090B358 /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
+		48441AA8129A85C30090B358 /* NSArray-Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-Shuffle.h"; sourceTree = "<group>"; };
+		48441AA9129A85C30090B358 /* NSArray-Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray-Shuffle.m"; sourceTree = "<group>"; };
+		48441ADA129A8BB00090B358 /* AccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountController.h; sourceTree = "<group>"; };
+		48441ADB129A8BB00090B358 /* AccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountController.m; sourceTree = "<group>"; };
+		48441B18129A927F0090B358 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login.png; path = Resources/login.png; sourceTree = "<group>"; };
+		486791FF1284AFAF00C73DA0 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		486792001284AFAF00C73DA0 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
+		486793EF1284B20D00C73DA0 /* ABOUT.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ABOUT.txt; path = Resources/ABOUT.txt; sourceTree = "<group>"; };
+		4867965212887E4500C73DA0 /* GroovyAppliance.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GroovyAppliance.mm; sourceTree = "<group>"; };
+		48D8207A128F1A1200D43D7E /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		48D8223B128F5AAE00D43D7E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		48D8223E128F5AB700D43D7E /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		48D825C112900A9000D43D7E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		48D825C212900A9000D43D7E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		48E6CDDB12820A1B009AA34D /* SongAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongAsset.h; sourceTree = "<group>"; };
+		48E6CDDC12820A1B009AA34D /* SongAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongAsset.m; sourceTree = "<group>"; };
+		48E6CDDD12820A1B009AA34D /* Groovy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Groovy.h; sourceTree = "<group>"; };
+		48E6CDDE12820A1B009AA34D /* Groovy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Groovy.m; sourceTree = "<group>"; };
+		48E6CDEE12820B5D009AA34D /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		48E6CDEF12820B5D009AA34D /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		48E6CDF012820B5D009AA34D /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		48E6CDF112820B5D009AA34D /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		48E6CDF212820B5D009AA34D /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		48E6CDF312820B5D009AA34D /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		48E6CDF412820B5D009AA34D /* SBJsonBase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SBJsonBase.mm; sourceTree = "<group>"; };
+		48E6CDF512820B5D009AA34D /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		48E6CDF612820B5D009AA34D /* SBJsonParser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SBJsonParser.mm; sourceTree = "<group>"; };
+		48E6CDF712820B5D009AA34D /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		48E6CDF812820B5D009AA34D /* SBJsonWriter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SBJsonWriter.mm; sourceTree = "<group>"; };
+		875A8253126FFF5300ECADC2 /* BackRow */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BackRow; path = theos/include/BackRow; sourceTree = "<group>"; };
+		875A8425126FFF6500ECADC2 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		875A8427126FFF6D00ECADC2 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		875A86EB12704ACC00ECADC2 /* theos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = theos; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* Groovy.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Groovy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Groovy */ = {
+			isa = PBXGroup;
+			children = (
+				48437F93127C447C00D8F242 /* Classes */,
+				875A86EB12704ACC00ECADC2 /* theos */,
+				875A8253126FFF5300ECADC2 /* BackRow */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+				875A8427126FFF6D00ECADC2 /* Makefile */,
+				875A8425126FFF6500ECADC2 /* build.sh */,
+				48D8207A128F1A1200D43D7E /* control */,
+				48D8223B128F5AAE00D43D7E /* LICENSE */,
+				48D8223E128F5AB700D43D7E /* README.markdown */,
+			);
+			name = Groovy;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				484381741281E6F600D8F242 /* images */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+				486793EF1284B20D00C73DA0 /* ABOUT.txt */,
+				48441977129A66710090B358 /* Account.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* Groovy.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* Groovy_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		48437F93127C447C00D8F242 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				48E6CDED12820B5D009AA34D /* JSON */,
+				48E6CDD812820A04009AA34D /* Groovy */,
+				48437FB3127C449D00D8F242 /* BackRowExtras.h */,
+				4867965212887E4500C73DA0 /* GroovyAppliance.mm */,
+				4843819D1281EA5B00D8F242 /* PlayerMenuController.h */,
+				4843819E1281EA5B00D8F242 /* PlayerMenuController.m */,
+				484381EB1282028A00D8F242 /* SongListController.h */,
+				484381EC1282028A00D8F242 /* SongListController.m */,
+				486791FF1284AFAF00C73DA0 /* AboutController.h */,
+				486792001284AFAF00C73DA0 /* AboutController.m */,
+				48441974129A65C80090B358 /* PlaylistController.h */,
+				48441975129A65C80090B358 /* PlaylistController.m */,
+				48441ADA129A8BB00090B358 /* AccountController.h */,
+				48441ADB129A8BB00090B358 /* AccountController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		484381741281E6F600D8F242 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				48441B18129A927F0090B358 /* login.png */,
+				484381721281E6F200D8F242 /* groovy.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		48E6CDD812820A04009AA34D /* Groovy */ = {
+			isa = PBXGroup;
+			children = (
+				48E6CDDB12820A1B009AA34D /* SongAsset.h */,
+				48E6CDDC12820A1B009AA34D /* SongAsset.m */,
+				48E6CDDD12820A1B009AA34D /* Groovy.h */,
+				48E6CDDE12820A1B009AA34D /* Groovy.m */,
+				48D825C112900A9000D43D7E /* User.h */,
+				48D825C212900A9000D43D7E /* User.m */,
+				484419E2129A756A0090B358 /* Playlist.h */,
+				484419E3129A756A0090B358 /* Playlist.m */,
+				48441AA8129A85C30090B358 /* NSArray-Shuffle.h */,
+				48441AA9129A85C30090B358 /* NSArray-Shuffle.m */,
+			);
+			name = Groovy;
+			sourceTree = "<group>";
+		};
+		48E6CDED12820B5D009AA34D /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				48E6CDEE12820B5D009AA34D /* JSON.h */,
+				48E6CDEF12820B5D009AA34D /* NSObject+SBJSON.h */,
+				48E6CDF012820B5D009AA34D /* NSObject+SBJSON.m */,
+				48E6CDF112820B5D009AA34D /* NSString+SBJSON.h */,
+				48E6CDF212820B5D009AA34D /* NSString+SBJSON.m */,
+				48E6CDF312820B5D009AA34D /* SBJsonBase.h */,
+				48E6CDF412820B5D009AA34D /* SBJsonBase.mm */,
+				48E6CDF512820B5D009AA34D /* SBJsonParser.h */,
+				48E6CDF612820B5D009AA34D /* SBJsonParser.mm */,
+				48E6CDF712820B5D009AA34D /* SBJsonWriter.h */,
+				48E6CDF812820B5D009AA34D /* SBJsonWriter.mm */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* Groovy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "Groovy" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Groovy;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = Groovy;
+			productReference = 8D5B49B6048680CD000E48DA /* Groovy.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Groovy" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* Groovy */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* Groovy */,
+				875A8234126FFBA400ECADC2 /* thePlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				875A8424126FFF5300ECADC2 /* BackRow in Resources */,
+				875A8426126FFF6500ECADC2 /* build.sh in Resources */,
+				875A873412704ACC00ECADC2 /* theos in Resources */,
+				484381731281E6F200D8F242 /* groovy.png in Resources */,
+				486793F01284B20D00C73DA0 /* ABOUT.txt in Resources */,
+				48D8207B128F1A1200D43D7E /* control in Resources */,
+				48D8223C128F5AAE00D43D7E /* LICENSE in Resources */,
+				48441978129A66710090B358 /* Account.plist in Resources */,
+				48441B19129A927F0090B358 /* login.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		875A8233126FFBA400ECADC2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/build.sh",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n./build.sh\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875A8428126FFF6D00ECADC2 /* Makefile in Sources */,
+				4843819F1281EA5B00D8F242 /* PlayerMenuController.m in Sources */,
+				484381ED1282028A00D8F242 /* SongListController.m in Sources */,
+				48E6CDE112820A1B009AA34D /* SongAsset.m in Sources */,
+				48E6CDE212820A1B009AA34D /* Groovy.m in Sources */,
+				48E6CDF912820B5D009AA34D /* NSObject+SBJSON.m in Sources */,
+				48E6CDFA12820B5D009AA34D /* NSString+SBJSON.m in Sources */,
+				48E6CDFB12820B5D009AA34D /* SBJsonBase.mm in Sources */,
+				48E6CDFC12820B5D009AA34D /* SBJsonParser.mm in Sources */,
+				48E6CDFD12820B5D009AA34D /* SBJsonWriter.mm in Sources */,
+				486792011284AFAF00C73DA0 /* AboutController.m in Sources */,
+				4867965312887E4500C73DA0 /* GroovyAppliance.mm in Sources */,
+				48D825C312900A9000D43D7E /* User.m in Sources */,
+				48441976129A65C80090B358 /* PlaylistController.m in Sources */,
+				484419E4129A756A0090B358 /* Playlist.m in Sources */,
+				48441AAA129A85C30090B358 /* NSArray-Shuffle.m in Sources */,
+				48441ADC129A8BB00090B358 /* AccountController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Groovy_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = Groovy;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Groovy_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = Groovy;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		875A8235126FFBA400ECADC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = thePlugin;
+			};
+			name = Debug;
+		};
+		875A8236126FFBA400ECADC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = thePlugin;
+				SDKROOT = iphoneos4.0;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "Groovy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Groovy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		875A823D126FFBC200ECADC2 /* Build configuration list for PBXAggregateTarget "thePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				875A8235126FFBA400ECADC2 /* Debug */,
+				875A8236126FFBA400ECADC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

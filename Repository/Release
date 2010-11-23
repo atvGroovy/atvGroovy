@@ -1,0 +1,9 @@
+Origin: Apple TV Groovy
+Label: Apple TV Groovy
+Suite: stable
+Version: 1.0
+Codename: stable
+Architectures: darwin-arm
+Components: main
+Description: Apple TV Groovy Plugin Repository
+
