@@ -1,11 +1,12 @@
 Changelog
 =========
 
-0.3 - not released yet
+0.3 - 2010-11-30
 --------------
-*    internals
-    *    fixed memory leaks
-    *    uuid is now random
+*   internals
+    *   fixed memory leaks
+    *   uuid is now random
+*   now on the awkwardtv repository
 	
 0.2 - 2010-11-23
 --------------

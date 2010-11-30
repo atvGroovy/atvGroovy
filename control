@@ -1,10 +1,9 @@
 Package: com.atv.groovy
 Name: Groovy
-Maintainer: hackfrag & headcrap
+Maintainer: hackfrag <hackfrag@gmail.com>
 Description: Grooveshark Client for AppleTV 2G 
 Section: Music
 Author: hackfrag <hackfrag@gmail.com>, headcrap <headcrap19388@googlemail.com>
-Filename: deb/Groovy.deb
 Version: 0.3
 Architecture: iphoneos-arm
 Homepage: http://groovy.weasel-project.com

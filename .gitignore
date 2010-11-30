@@ -10,3 +10,6 @@ build
 obj
 _
 .theos
+
+/Groovy.xcodeproj/xcuserdata/
+/Groovy.xcodeproj/project.xcworkspace/
