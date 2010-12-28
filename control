@@ -4,7 +4,7 @@ Author: hackfrag <hackfrag@gmail.com>, headcrap <headcrap19388@googlemail.com>
 Maintainer: hackfrag <hackfrag@gmail.com>
 Description: Grooveshark Client for AppleTV 2G 
 Section: Music
-Version: 0.3
+Version: 0.4
 Architecture: iphoneos-arm
 Homepage: http://groovy.weasel-project.com
 Conflicts: com.atv.groovy-beta

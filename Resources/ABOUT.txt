@@ -3,6 +3,9 @@ November 23,2010
 
 Authors:	@headcrap, @hackfrag, @atvGroovy
 			Follow us on twitter for updates
+
+0.4
+	- fixed Grooveshark API changes (htmlshark client)
 0.3
 	- internal
 		- fixed memory leaks

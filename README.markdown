@@ -1,6 +1,9 @@
 Changelog
 =========
 
+0.4 - 2010-12-28
+*   fixed Grooveshark API changes (htmlshark client)
+	
 0.3 - 2010-11-30
 --------------
 *   internals
