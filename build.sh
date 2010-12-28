@@ -21,7 +21,7 @@ echo "Make Install..."
 
 make install
 
-#echo "Creating Repository"
+echo "Creating Repository"
 
 #rm -rf Repository/deb
 #rm Repository/Package.gz

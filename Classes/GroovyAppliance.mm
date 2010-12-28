@@ -78,13 +78,14 @@
 }
 - (void)selectCategoryWithIdentifier:(id)identifier;
 - (id)topShelfView;
+- (void)refresh;
 @end
 
 @implementation TopShelfController
 
-
+- (void)refresh{}
 - (void)selectCategoryWithIdentifier:(id)identifier {
-
+	
 }
 - (BRTopShelfView *)topShelfView {
 	
@@ -123,7 +124,7 @@
 		NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
 		[nc addObserver:self selector:@selector(didPlaySong:) name:groovyPlayNotification object:nil];
 		
-	
+		
 	} return self;
 }
 - (void)didPlaySong:(NSNotification *)notification {
@@ -174,10 +175,10 @@
 		NSString *fullPath = [[NSBundle bundleForClass:[PlayerMenuController class]] pathForResource:@"ABOUT" ofType:@"txt"];
 		NSString *text = [NSString stringWithContentsOfFile:fullPath];
 		BRScrollingTextControl *scrollControl = [BRScrollingTextControl controlWithTitle:@"About" text:text firstButton:nil secondButton:nil thirdButton:nil defaultFocus:0];
-
+		
 		menuController = [AboutController controllerWithContentControl:scrollControl];
 	}
-
+	
 	return menuController;
 	
 }

@@ -1,9 +1,12 @@
 Package: com.atv.groovy
 Name: Groovy
+Author: hackfrag <hackfrag@gmail.com>, headcrap <headcrap19388@googlemail.com> 
 Maintainer: hackfrag <hackfrag@gmail.com>
 Description: Grooveshark Client for AppleTV 2G 
 Section: Music
-Author: hackfrag <hackfrag@gmail.com>, headcrap <headcrap19388@googlemail.com>
 Version: 0.3
 Architecture: iphoneos-arm
 Homepage: http://groovy.weasel-project.com
+Conflicts: com.atv.groovy-beta
+Replaces: com.atv.groovy-beta
+Depends: org.awkwardtv.whitelist

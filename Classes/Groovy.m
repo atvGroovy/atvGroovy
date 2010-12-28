@@ -114,7 +114,7 @@ static Groovy *sharedGroovy = nil;
 - (id)init {
 	
 	self = [super init];
-
+	
 	
 	return self;	
 }
@@ -164,8 +164,8 @@ static Groovy *sharedGroovy = nil;
 
 - (void)songsInLibrary {
 	/*
-	NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:@"",@"userID", @"0", @"page", nil];
-	NSDictionary *response = [self call:@"userGetSongsInLibrary" withParams:params withClient:GROOVY_GSLITE];
+	 NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:@"",@"userID", @"0", @"page", nil];
+	 NSDictionary *response = [self call:@"userGetSongsInLibrary" withParams:params withClient:GROOVY_GSLITE];
 	 */	
 }
 - (void)songsInPlayList:(NSInteger)playlistID callback:(void(^)(NSArray *songs))callback {
@@ -194,41 +194,41 @@ static Groovy *sharedGroovy = nil;
 			callback(songs);
 		});
 	});
-
+	
 }
 
 - (void)popularSongsToday {
 	/*
-	NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys: nil];
-	NSDictionary *response = [self call:@"popularGetSongs" withParams:params withClient:GROOVY_GSLITE];
-	*/
+	 NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys: nil];
+	 NSDictionary *response = [self call:@"popularGetSongs" withParams:params withClient:GROOVY_GSLITE];
+	 */
 	
 }
 - (void)popularSongsMonth {
 	
 	/*
-	NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:@"monthly",@"type", nil];
-	NSDictionary *response = [self call:@"popularGetSongs" withParams:params withClient:GROOVY_GSLITE];
-	*/
+	 NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:@"monthly",@"type", nil];
+	 NSDictionary *response = [self call:@"popularGetSongs" withParams:params withClient:GROOVY_GSLITE];
+	 */
 }
 
 - (void)favoritesSongs {
 	/*
-	NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:@"",@"userID",@"Songs",@"ofWhat", nil];
-	NSDictionary *response = [self call:@"getFavorites" withParams:params withClient:GROOVY_GSLITE];
-	*/
+	 NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:@"",@"userID",@"Songs",@"ofWhat", nil];
+	 NSDictionary *response = [self call:@"getFavorites" withParams:params withClient:GROOVY_GSLITE];
+	 */
 }
 - (void)favoritesPlaylists {
 	/*
-	NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:@"",@"userID",@"Playlists",@"ofWhat", nil];
-	NSDictionary *response = [self call:@"getFavorites" withParams:params withClient:GROOVY_GSLITE];
-	*/
+	 NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:@"",@"userID",@"Playlists",@"ofWhat", nil];
+	 NSDictionary *response = [self call:@"getFavorites" withParams:params withClient:GROOVY_GSLITE];
+	 */
 }
 - (void)favoritesUser {
 	/*
-	NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:@"",@"userID",@"Users",@"ofWhat", nil];
-	NSDictionary *response = [self call:@"getFavorites" withParams:params withClient:GROOVY_GSLITE];
-	*/
+	 NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:@"",@"userID",@"Users",@"ofWhat", nil];
+	 NSDictionary *response = [self call:@"getFavorites" withParams:params withClient:GROOVY_GSLITE];
+	 */
 	
 }
 - (void)playlists:(void(^)(NSArray *playlists))callback {
@@ -258,13 +258,13 @@ static Groovy *sharedGroovy = nil;
 	return nil;
 }
 - (void)createPlaylistWith:(NSString *)name description:(NSString *)description callback:(void (^)(NSInteger playlistID))callback  {
-
+	
 	NSArray *songs = [[NSArray alloc] init];
 	
 	NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:description,@"playlistAbout",
-																			      name, @"playlistName",
-																				   songs, @"songIDs",
-																				   nil];
+							name, @"playlistName",
+							songs, @"songIDs",
+							nil];
 	[songs release];
 	
 	dispatch_async(dispatch_get_global_queue(0, 0), ^ {
@@ -277,7 +277,7 @@ static Groovy *sharedGroovy = nil;
 			callback(playlistID);
 		});
 	});
-
+	
 }
 
 - (void)addSongToLibrary:(NSInteger)songID {
@@ -300,7 +300,7 @@ static Groovy *sharedGroovy = nil;
 		
 		NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:[NSString stringWithFormat:@"%d", playlist.playlistID], @"playlistID", songArray, @"songIDs",nil];
 		[songArray release];
-	
+		
 		
 		dispatch_async(dispatch_get_global_queue(0, 0), ^ {
 			NSDictionary *response = [self call:@"overwritePlaylist" withParams:params withClient:GROOVY_GSLITE];
@@ -317,9 +317,9 @@ static Groovy *sharedGroovy = nil;
 
 - (void)logoutUser {
 	/*
-	NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:nil];
-	[self call:@"logoutUser" withParams:params withClient:GROOVY_GSLITE];
-	*/
+	 NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:nil];
+	 [self call:@"logoutUser" withParams:params withClient:GROOVY_GSLITE];
+	 */
 }
 
 
@@ -338,7 +338,7 @@ static Groovy *sharedGroovy = nil;
 				self.user = user;
 				callback(user);
 			}
-
+			
 		});
 	});
 	
@@ -411,7 +411,7 @@ static Groovy *sharedGroovy = nil;
 							@"false", @"prefetch", 
 							nil];
 	dispatch_async(dispatch_get_global_queue(0, 0), ^ {
-		NSDictionary *response = [self call:@"getStreamKeyFromSongIDEx" withParams:params withClient:GROOVY_JSPLAYER];
+		NSDictionary *response = [self call:@"getStreamKeyFromSongIDEx" withParams:params withClient:GROOVY_JSQUEUE];
 		[params release];
 		
 		dispatch_async(dispatch_get_main_queue(), ^{
@@ -433,7 +433,7 @@ static Groovy *sharedGroovy = nil;
 							[song assetID], @"songID",
 							@"false", @"prefetch", 
 							nil];
-	NSDictionary *response = [self call:@"getStreamKeyFromSongIDEx" withParams:params withClient:GROOVY_JSPLAYER];
+	NSDictionary *response = [self call:@"getStreamKeyFromSongIDEx" withParams:params withClient:GROOVY_JSQUEUE];
 	[params release];
 	NSDictionary *dict = [response objectForKey:@"result"];
 	NSString *streamURL = [NSString stringWithFormat:(NSString *)groovyURLstream,[dict objectForKey:@"ip"], [dict objectForKey:@"streamKey"]];
@@ -454,7 +454,7 @@ static Groovy *sharedGroovy = nil;
 }
 
 - (NSDictionary *)call:(NSString *)method withParams:(NSDictionary *)params withClient:(int)clientIdentifer {
-
+	
 	NSString *client;
 	NSString *clientRevision;
 	NSDictionary *header;
@@ -462,13 +462,18 @@ static Groovy *sharedGroovy = nil;
 	
 	switch (clientIdentifer) {
 		case GROOVY_JSPLAYER:
-			client = @"jsplayer";
-			clientRevision = @"20100831.12";
+			client = @"htmlshark";
+			clientRevision = @"20100831";
 			break;
 		case GROOVY_GSLITE:
 			client = @"gslite";
 			clientRevision = @"20101012.14";
 			break;
+		case GROOVY_JSQUEUE:
+			client = @"jsqueue";
+			clientRevision = @"20101012.37";
+			break;
+			
 		default:
 			client = @"";
 			clientRevision = @"";
@@ -493,7 +498,7 @@ static Groovy *sharedGroovy = nil;
 				  [self generateTokenFor:method], @"token", nil];
 	}
 	
-
+	
 	NSDictionary *request = [[NSMutableDictionary alloc] initWithObjectsAndKeys: header, @"header",
 							 params, @"parameters",
 							 method, @"method",nil];
@@ -501,7 +506,7 @@ static Groovy *sharedGroovy = nil;
 	
 	
 	NSString *json = [request JSONRepresentation];
-
+	
 	
 	NSURL *url = [NSURL URLWithString:(NSString *)groovyURLmore];
 	NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:url];
@@ -518,7 +523,7 @@ static Groovy *sharedGroovy = nil;
 	
 	NSData *data = [NSURLConnection sendSynchronousRequest:theRequest returningResponse:&response error:&error];
 	NSString *returnString = [NSString stringWithCString:[data bytes] length:[data length]];
-
+	
 	return [returnString JSONValue];
 	
 }
