@@ -1,7 +1,11 @@
 Changelog
 =========
+0.5 - 2011-02-20
+--------------
+*   4.2 compatibility
 
 0.4 - 2010-12-28
+--------------
 *   fixed Grooveshark API changes (htmlshark client)
 	
 0.3 - 2010-11-30

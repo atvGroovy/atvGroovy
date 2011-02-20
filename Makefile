@@ -13,5 +13,8 @@ Groovy_LDFLAGS =  -undefined dynamic_lookup #-L$(FW_PROJECT_DIR) -lBackRow
 Groovy_RESOURCE_FILES = Resources/groovy.png Resources/ABOUT.txt Resources/Account.plist Resources/login.png Resources/music.png Resources/search.png Resources/favorite.png
 include $(FW_MAKEDIR)/bundle.mk
 
+after-Groovy-stage:: 
+	mkdir -p $(FW_STAGING_DIR)/Applications/AppleTV.app/Appliances; ln -f -s /Applications/Lowtide.app/Appliances/Groovy.frappliance $(FW_STAGING_DIR)/Applications/AppleTV.app/Appliances/
+
 after-install::
-	install.exec "killall -9 Lowtide"
+	install.exec "killall -9 AppleTV"
